@@ -283,6 +283,7 @@ body{
                         justify-content: space-between;
 
                         .card{
+                            position: relative;
                             width: 30%;
                             min-height: 60vh;
                             height: auto;
@@ -303,6 +304,19 @@ body{
                             @mixin element{
                                 height: 100%;
                                 width: 100%;
+                            }
+
+                            .best-offer{
+                                position: absolute;
+                                width: auto;
+                                background: red;
+                                padding: 1em;
+                                border-radius: 1000px;
+                                height: 5vh;
+                                top: -2.5vh;
+                                right: -1em;
+
+                                @include flex;
                             }
 
                             .header{
@@ -338,6 +352,9 @@ body{
                                 }
                             }
 
+                            .content{
+                                @include element;
+                            }
                             .footer{
                                 @include element;
                             }
@@ -399,18 +416,44 @@ body{
                                 }
                             }
 
-
                             .content{
                                 @include tn-flex-column;
 
                                 align-items: flex-start;
                                 font-size: 15px;
+                                min-height: 20vh;
 
                                 h2{
                                     color: var(--a);
                                 }
                                 p{
                                     color: var(--grey2);
+                                }
+                                p.lorem{
+                                    margin-top: 1em;
+                                }
+                            }
+
+                            .footer{
+                                height: auto;
+                                width: 100%;
+                                margin-top: 1em;
+                                font-size: 16px;
+
+                                @include tn-flex-row;
+                                justify-content: flex-start;
+
+                                a{
+                                    text-decoration: none;
+                                    color: var(--b);
+                                    padding: .5em;
+                                    background: var(--g);
+                                    transition: var(--transition3);
+                                    border-radius: var(--border1);
+
+                                    &:hover{
+                                        background: var(--w);
+                                    }
                                 }
                             }
                         }

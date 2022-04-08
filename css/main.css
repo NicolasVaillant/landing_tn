@@ -234,6 +234,7 @@ body main .wrapper .line-follow .container-offer .services-card, body main .wrap
   justify-content: space-between;
 }
 body main .wrapper .line-follow .container-offer .services-card .card, body main .wrapper .line-follow .registration-quote .services-card .card, body main .wrapper .line-follow .more-info-offer .services-card .card {
+  position: relative;
   width: 30%;
   min-height: 60vh;
   height: auto;
@@ -252,6 +253,20 @@ body main .wrapper .line-follow .container-offer .services-card .card, body main
   align-content: center;
   flex-direction: column !important;
   justify-content: space-between !important;
+}
+body main .wrapper .line-follow .container-offer .services-card .card .best-offer, body main .wrapper .line-follow .registration-quote .services-card .card .best-offer, body main .wrapper .line-follow .more-info-offer .services-card .card .best-offer {
+  position: absolute;
+  width: auto;
+  background: red;
+  padding: 1em;
+  border-radius: 1000px;
+  height: 5vh;
+  top: -2.5vh;
+  right: -1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 body main .wrapper .line-follow .container-offer .services-card .card .header, body main .wrapper .line-follow .registration-quote .services-card .card .header, body main .wrapper .line-follow .more-info-offer .services-card .card .header {
   height: 100%;
@@ -287,6 +302,10 @@ body main .wrapper .line-follow .container-offer .services-card .card .header .i
   height: 1vh;
   background: var(--w);
   border-radius: 1000px;
+}
+body main .wrapper .line-follow .container-offer .services-card .card .content, body main .wrapper .line-follow .registration-quote .services-card .card .content, body main .wrapper .line-follow .more-info-offer .services-card .card .content {
+  height: 100%;
+  width: 100%;
 }
 body main .wrapper .line-follow .container-offer .services-card .card .footer, body main .wrapper .line-follow .registration-quote .services-card .card .footer, body main .wrapper .line-follow .more-info-offer .services-card .card .footer {
   height: 100%;
@@ -346,12 +365,39 @@ body main .wrapper .line-follow .more-info-offer .option-users .column .content 
   flex-direction: column !important;
   align-items: flex-start;
   font-size: 15px;
+  min-height: 20vh;
 }
 body main .wrapper .line-follow .more-info-offer .option-users .column .content h2 {
   color: var(--a);
 }
 body main .wrapper .line-follow .more-info-offer .option-users .column .content p {
   color: var(--grey2);
+}
+body main .wrapper .line-follow .more-info-offer .option-users .column .content p.lorem {
+  margin-top: 1em;
+}
+body main .wrapper .line-follow .more-info-offer .option-users .column .footer {
+  height: auto;
+  width: 100%;
+  margin-top: 1em;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+body main .wrapper .line-follow .more-info-offer .option-users .column .footer a {
+  text-decoration: none;
+  color: var(--b);
+  padding: 0.5em;
+  background: var(--g);
+  transition: var(--transition3);
+  border-radius: var(--border1);
+}
+body main .wrapper .line-follow .more-info-offer .option-users .column .footer a:hover {
+  background: var(--w);
 }
 body main .wrapper .line-follow hr.separator {
   width: 100%;
