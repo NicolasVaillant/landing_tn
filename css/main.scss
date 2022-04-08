@@ -70,22 +70,25 @@ body{
             position: fixed;
             top: 0;
             left: 0;
-            transform: translate(2em, 2em);
             z-index: 499;
             height: $size;
-            width: $size;
+            width: 100%;
             background: var(--w);
             box-shadow: 0 4px 10px 0 rgb(50 50 93 / 25%);
-            border-radius: 1000px;
-            cursor: pointer;
-            text-decoration: none;
-            color: var(--b);
-            font-size: 1.5em;
 
-            //visibility: hidden;
-            //opacity: 0;
+            @include tn-flex-row;
 
-            @include flex;
+            a{
+                @include flex;
+
+                gap: 1em;
+                text-decoration: none;
+                color: var(--b);
+                cursor: pointer;
+                background: var(--g);
+                padding: .5em;
+                border-radius: var(--border1);
+            }
         }
 
         .landing-container{
