@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+@media all and (max-width: 800px){
+    body main .wrapper{
+        --padding: 0!important;
+    }
+    body main .landing-container .landing-content{
+        font-size: 6vw!important;
+    }
+    body main .landing-container .landing-content a.header-button{
+        font-size: 5vw!important;
+    }
+    body main .landing-container header{
+        font-size: 18px!important;
+    }
+    .services-card, .option-users{
+        flex-direction: column!important;
+        gap: 1em;
+    }
+    .services-card .card,
+    .option-users .column{
+        width: 100% !important;
+        min-height: 20vh!important;
+    }
+    .img-header img{
+        height: 15vh!important;
+        width: 30vw!important;
+    }
+
+    .landing-content{
+        padding: 10em 2em!important;
+    }
+}

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@media all and (max-width: 1200px){
+    .wrapper{
+        flex-direction: column!important;
+    }
+    .col:first-child{
+        justify-content: flex-end!important;
+        margin-bottom: 2em;
+    }
+    .landing-content,
+    .wrapper{
+        font-size: 4vw!important;
+    }
+}

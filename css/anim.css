@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.show-menu{
+    transform: scale(1) !important;
+}
+.show-menu-ico{
+    background: var(--g)!important;
+}
+.shortcut-contact-fixed-show{
+    visibility: visible!important;
+    opacity: 1!important;
+}
+.input-span{
+    transform: translate(-.5em, -2.5em) !important;
+}

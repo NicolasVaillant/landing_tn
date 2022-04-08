@@ -1,0 +1,64 @@
+@charset "utf-8";
+*,
+ ::before,
+ ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    user-select: none;
+}
+
+:root {
+    --w: #fff;
+    --b: #2a2e35;
+    --a: #25a6fc;
+    --g: #eeeeee;
+
+    --grey1: #5f5f61;
+    --grey2: #8f8f93;
+
+    --border1: 5px;
+    --border2: 15px;
+    --marg1: 15%;
+    --marg2: 5%;
+    --gap1: 15px;
+    --inseta: 10px;
+    --insetb: -10px;
+
+    --test : #ff0000;
+
+    /*--------------------------*/
+    --main : #eee;
+    --wrapper : #fff;
+
+    --transition1 : all 1s!important;
+    --transition2 : all .5s!important;
+    --transition3 : all .2s!important;
+    /*--------------------------*/
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif, Bahnschrift;
+}
+
+::-webkit-scrollbar {
+    width: .6em;
+    background: var(--w);
+}
+
+::-webkit-scrollbar-thumb {
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    -webkit-border-radius: var(--border2);
+    border-radius: var(--border2);
+    background-color: var(--b);
+    -webkit-box-shadow: inset var(--insetb) var(--insetb) 0 var(--grey1), inset var(--inseta) var(--inseta) 0 var(--grey1);
+    box-shadow: inset var(--insetb) var(--insetb) 0 var(--grey1), inset var(--inseta) var(--inseta) 0 var(--grey1);
+    height: 20px;
+    cursor: pointer;
+}
