@@ -375,6 +375,7 @@ body main .wrapper .line-follow .more-info-offer .option-users .column .content 
 }
 body main .wrapper .line-follow .more-info-offer .option-users .column .content p.lorem {
   margin-top: 1em;
+  text-align: justify;
 }
 body main .wrapper .line-follow .more-info-offer .option-users .column .footer {
   height: auto;
@@ -517,26 +518,7 @@ body main .wrapper .line-follow .tn-footer .content {
   width: 100%;
 }
 body main .wrapper .line-follow .tn-footer .content a {
-  font-family: "Roboto", sans-serif;
-  text-decoration: none;
-  color: var(--w);
-  background: var(--b);
-  padding: 0.5em;
-  border: 0;
-  outline: none;
-  cursor: pointer;
-  white-space: nowrap;
-  transition: var(--transition3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  flex-direction: row;
-  gap: 1em;
-}
-body main .wrapper .line-follow .tn-footer .content a:hover {
   color: var(--b);
-  background: var(--w);
 }
 
 /*# sourceMappingURL=main.css.map */

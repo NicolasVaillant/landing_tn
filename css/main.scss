@@ -431,6 +431,7 @@ body{
                                 }
                                 p.lorem{
                                     margin-top: 1em;
+                                    text-align: justify;
                                 }
                             }
 
@@ -553,7 +554,7 @@ body{
                         width: 100%;
 
                         a{
-                            @include button;
+                            color: var(--b);
                         }
                     }
                 }
